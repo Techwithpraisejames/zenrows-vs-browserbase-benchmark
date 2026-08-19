@@ -33,8 +33,9 @@ Before running the benchmark, make sure you have:
 Clone the repository:
 
 ```bash
-git clone <your-repository-url>
-cd <your-repository-directory>
+git clone https://github.com/Techwithpraisejames/zenrows-vs-browserbase-benchmark.git
+cd zenrows-vs-browserbase-benchmark
+```
 
 ## Configuration
 
