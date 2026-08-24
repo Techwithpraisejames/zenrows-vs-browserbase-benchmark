@@ -1,0 +1,6 @@
+tool,target,url,total,successful,failed,success_rate_pct,avg_ms,p50_ms,p95_ms
+zenrows,IKEA product page,https://www.ikea.com/us/en/p/kallax-shelf-unit-white-80275887/,100,100,0,100.0,1814,1707,2823
+zenrows,TripAdvisor Paris restaurant listings,https://www.tripadvisor.com/Restaurants-g187147-Paris_Ile_de_France.html,100,100,0,100.0,5625,4547,6581
+zenrows,Walmart AirPod product page,https://www.walmart.com/ip/AirPods-Pro-2nd-generation-with-MagSafe-Case-USB-C/5689919121,100,100,0,100.0,4519,3880,9009
+zenrows,Amazon search results,https://www.amazon.com/s?k=wireless+mechanical+keyboard,100,92,8,92.0,11753,11966,19932
+zenrows,Python documentation,https://docs.python.org/3/,100,100,0,100.0,611,486,1437
