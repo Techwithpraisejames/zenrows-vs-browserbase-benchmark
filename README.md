@@ -58,16 +58,22 @@ $env:BROWSERBASE_API_KEY="your-browserbase-api-key"
 
 ```text
 .
-├── run_benchmark.py
-├── zenrows_results.csv
-├── browserbase_results.csv
-└── requirements.txt
+├── Results
+│   ├── browserbase_results.csv
+│   ├── summary_browserbase.csv
+│   ├── summary_zenrows.csv
+│   └── zenrows_results.csv
+├── README.md
+├── requirements.txt
+└── run_benchmark.py
 ```
 
 - `run_benchmark.py` contains the benchmark script.
-- `zenrows_results.csv` contains the raw Zenrows benchmark results.
-- `browserbase_results.csv` contains the raw Browserbase benchmark results.
-- `requirements.txt` lists the Python dependencies required to run the benchmark.
+- `Results/zenrows_results.csv` contains the raw Zenrows benchmark results.
+- `Results/browserbase_results.csv` contains the raw Browserbase benchmark results.
+- `Results/summary_zenrows.csv` contains the summarized Zenrows benchmark results.
+- `Results/summary_browserbase.csv` contains the summarized Browserbase benchmark results.
+- `requirements.txt` lists the dependencies required to run the benchmark.
 
 ## How it works
 
