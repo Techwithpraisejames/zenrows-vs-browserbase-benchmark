@@ -129,4 +129,4 @@ The benchmark produces four CSV files. Each file contains the request-level resu
 
 This benchmark is part of the blog:
 
-**Best Browserbase Alternative in 2026 for Protected Web Access**
+**[Best Browserbase Alternative in 2026 for Protected Web Access(https://www.zenrows.com/blog/best-browserbase-alternative-for-protected-web-access)**
