@@ -2,7 +2,7 @@
 
 This project benchmarks Zenrows against Browserbase for accessing protected and dynamic web pages.
 
-The benchmark, conducted on the **16th of August 2026**, sends repeated requests to the same five websites using both platforms and measures successful page retrieval, response times, and HTTP status codes.
+The benchmark, conducted on the **17th of August 2026**, sends repeated requests to the same five websites using both platforms and measures successful page retrieval, response times, and HTTP status codes.
 
 Zenrows is tested using `mode=auto`, while Browserbase is tested using its default Fetch configuration.
 
