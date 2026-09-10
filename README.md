@@ -26,7 +26,6 @@ Before running the benchmark, make sure you have:
 - Python 3.9 or later
 - A Zenrows API key
 - A Browserbase API key
-- Internet access
 
 ## Installation
 
