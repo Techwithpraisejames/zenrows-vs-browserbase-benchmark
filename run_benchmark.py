@@ -37,7 +37,7 @@ EXPECTED_CONTENT = {
     "IKEA product page":                   ["KALLAX", "shelf unit"],
     "TripAdvisor Paris restaurant listings": ["Restaurants in Paris", "Top restaurants in Paris"],
     "Walmart AirPod product page":         ["AirPods Pro"],
-    "Amazon search results":               ["wireless mechanical keyboard"],
+    "Amazon search results":               ["wireless working keyboard"],
     "Python documentation":                ["Python", "Documentation"],
 }
 
