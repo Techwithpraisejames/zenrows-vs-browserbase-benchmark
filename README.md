@@ -58,11 +58,13 @@ $env:BROWSERBASE_API_KEY="your-browserbase-api-key"
 
 ```text
 .
-├── Results
+├── results
 │   ├── browserbase_results.csv
 │   ├── summary_browserbase.csv
 │   ├── summary_zenrows.csv
 │   └── zenrows_results.csv
+├── .env.example
+├── .gitignore
 ├── README.md
 ├── requirements.txt
 └── run_benchmark.py
