@@ -36,23 +36,28 @@ git clone https://github.com/Techwithpraisejames/zenrows-vs-browserbase-benchmar
 cd zenrows-vs-browserbase-benchmark
 ```
 
-## Configuration
-
-Set the API keys for both platforms before running the benchmark.
-
-The benchmark expects the following environment variables:
+Install the dependencies:
 
 ```bash
-export ZENROWS_API_KEY="your-zenrows-api-key"
-export BROWSERBASE_API_KEY="your-browserbase-api-key"
+pip install -r requirements.txt
 ```
 
-On Windows PowerShell:
+## Configuration
 
-```powershell
-$env:ZENROWS_API_KEY="your-zenrows-api-key"
-$env:BROWSERBASE_API_KEY="your-browserbase-api-key"
+Copy the example environment file:
+
+```bash
+cp .env.example .env
 ```
+
+Add your API keys to `.env`:
+
+```env
+ZENROWS_API_KEY=your-zenrows-api-key
+BROWSERBASE_API_KEY=your-browserbase-api-key
+```
+
+The benchmark loads these environment variables when the script runs. The `.env` file is excluded from Git through `.gitignore`, so your API keys are not committed to the repository.
 
 ## Project structure
 
@@ -71,10 +76,12 @@ $env:BROWSERBASE_API_KEY="your-browserbase-api-key"
 ```
 
 - `run_benchmark.py` contains the benchmark script.
-- `Results/zenrows_results.csv` contains the raw Zenrows benchmark results.
-- `Results/browserbase_results.csv` contains the raw Browserbase benchmark results.
-- `Results/summary_zenrows.csv` contains the summarized Zenrows benchmark results.
-- `Results/summary_browserbase.csv` contains the summarized Browserbase benchmark results.
+- `results/zenrows_results.csv` contains the raw Zenrows benchmark results.
+- `results/browserbase_results.csv` contains the raw Browserbase benchmark results.
+- `results/summary_zenrows.csv` contains the summarized Zenrows benchmark results.
+- `results/summary_browserbase.csv` contains the summarized Browserbase benchmark results.
+- `.env.example` provides the environment variable names required by the benchmark.
+- `.gitignore` excludes local environment files and other files that should not be committed.
 - `requirements.txt` lists the dependencies required to run the benchmark.
 
 ## How it works
@@ -98,25 +105,40 @@ The benchmark runs Zenrows with `mode=auto` and Browserbase with its default Fet
 
 ## Running the project
 
-Install the dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
 Run the benchmark:
 
 ```bash
 python run_benchmark.py
 ```
 
-Make sure the required API keys are available as environment variables before starting the script.
+The benchmark can also run either platform independently:
 
-The benchmark writes the raw results to separate CSV files for Zenrows and Browserbase.
+```bash
+python run_benchmark.py --tool zenrows
+```
+
+```bash
+python run_benchmark.py --tool browserbase
+```
+
+Or run both platforms:
+
+```bash
+python run_benchmark.py --tool both
+```
+
+Make sure your Zenrows and Browserbase API keys are configured in `.env` before starting the script.
 
 ## Output
 
-The benchmark produces four CSV files. Each file contains the request-level results from the corresponding platform. These files can be used to calculate success rates, compare response times, inspect HTTP status codes, and analyze individual requests.
+The benchmark produces four CSV files in the `results/` directory:
+
+- `zenrows_results.csv` contains request-level results for Zenrows.
+- `browserbase_results.csv` contains request-level results for Browserbase.
+- `summary_zenrows.csv` contains summarized results for Zenrows.
+- `summary_browserbase.csv` contains summarized results for Browserbase.
+
+The raw results can be used to inspect individual requests, HTTP status codes, response times, and success status. The summary files provide aggregated benchmark results for each target.
 
 ## Technologies
 
