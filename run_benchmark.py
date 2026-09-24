@@ -24,7 +24,7 @@ BROWSERBASE_API_KEY = os.getenv("BROWSERBASE_API_KEY", "")
 
 # targets
 TARGETS = [
-    {"name": "IKEA product page",                  "url": "https://www.ikea.com/us/en/p/kallax-shelf-unit-white-90637299/"},
+    {"name": "IKEA product page",                  "url": "https://www.ikea.com/us/en/p/kallax-shelf-unit-white-80275887"},
     {"name": "TripAdvisor Paris restaurant listings", "url": "https://www.tripadvisor.com/Restaurants-g187147-Paris_Ile_de_France.html"},
     {"name": "Walmart AirPod product page",        "url": "https://www.walmart.com/ip/AirPods-Pro-2nd-generation-with-MagSafe-Case-USB-C/5689919121"},
     {"name": "Amazon product page",              "url": "https://www.amazon.com/dp/B09W2H338D"},
